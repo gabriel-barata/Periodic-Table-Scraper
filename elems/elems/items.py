@@ -14,13 +14,13 @@ class PeriodicTableItem(scrapy.Item):
     )
     atomic_number = scrapy.Field(
         input_processor = MapCompose(remove_tags, str.strip, int),
-        outuput_processor = TakeFirst()
+        output_processor = TakeFirst()
     )
     atomic_mass = scrapy.Field(
-        input_processor=MapCompose(remove_tags, str.strip, float),
-        outuput_processor=TakeFirst()
+        input_processor = MapCompose(remove_tags, str.strip, float),
+        output_processor=TakeFirst()
     )
     chemical_group = scrapy.Field(
-        input_processor=MapCompose(remove_tags, str.strip),
-        outuput_processor=TakeFirst()
+        input_processor = MapCompose(remove_tags, str.strip),
+        output_processor = TakeFirst()
     )

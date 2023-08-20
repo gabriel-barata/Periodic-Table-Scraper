@@ -1,2 +1,3 @@
 scrapy==2.10.0
 scrapy-playwright==0.0.30
+mysql-connector-python==8.1.0
